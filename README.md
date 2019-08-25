@@ -1,4 +1,4 @@
-# Parenthical
+# Parenthetical
 ### A screenwriting app
 
 ***
