@@ -10,3 +10,7 @@ end
 get "/:userid/scripts" do
   erb :all_scripts
 end
+
+get "/sign_in" do
+  erb :sign_in
+end

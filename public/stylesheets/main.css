@@ -7,16 +7,14 @@ body {
 }
 
 section {
-  float: left;
   margin: 1em;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-article {
-  float: left;
-}
+article {}
 
 footer {
-  clear: both;
   margin: 0px;
   background-color: #898989;
   padding: 1em 1.5em;
@@ -28,7 +26,10 @@ nav {
   border-color: #4484CE;
   width: 100%;
   height: auto;
-  overflow:auto
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
 a.nav {
@@ -37,7 +38,6 @@ a.nav {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  float: right;
 }
 
 a:hover {
@@ -59,6 +59,45 @@ h4.nav {
 
 h1 {
   color: #55575b;
+}
+
+/* Bordered form */
+form {
+  background-color: #4484CE;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  color: white;
+  margin: auto;
+}
+
+form.label {
+  color: white;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
 }
 
 .header_photo {
