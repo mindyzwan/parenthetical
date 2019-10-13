@@ -61,6 +61,45 @@ h1 {
   color: #55575b;
 }
 
+/* Bordered form */
+form {
+  background-color: #4484CE;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  color: white;
+  margin: auto;
+}
+
+form.label {
+  color: white;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
 .header_photo {
   min-width: 100vw;
   width: 100%;
