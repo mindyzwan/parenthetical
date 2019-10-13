@@ -7,16 +7,14 @@ body {
 }
 
 section {
-  float: left;
   margin: 1em;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-article {
-  float: left;
-}
+article {}
 
 footer {
-  clear: both;
   margin: 0px;
   background-color: #898989;
   padding: 1em 1.5em;
@@ -28,7 +26,10 @@ nav {
   border-color: #4484CE;
   width: 100%;
   height: auto;
-  overflow:auto
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
 a.nav {
@@ -37,7 +38,6 @@ a.nav {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  float: right;
 }
 
 a:hover {
