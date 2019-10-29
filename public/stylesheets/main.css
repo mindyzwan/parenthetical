@@ -110,3 +110,7 @@ button:hover {
 .home_page {
   width: 40%;
 }
+
+.full {
+  flex: 0 0 100% ;
+}
