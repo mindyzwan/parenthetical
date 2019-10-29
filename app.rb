@@ -17,6 +17,11 @@ get "/users" do
   erb :users, locals: { users: db.all_users }
 end
 
+get "/scripts" do
+  db = DatabasePersistence.new(logger)
+  erb :scripts, locals: { scripts: db.all_scripts }
+end
+
 get "/sign_in" do
   erb :sign_in
 end
