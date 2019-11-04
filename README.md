@@ -12,5 +12,9 @@ It's important that every contributor and potential-contributor feels welcome an
 ## Setup
 Clone this repo to your desktop and run `bundle install` to install all the dependencies.
 
+To setup database, be sure to have PostgreSQL installed. Then run `createdb parenthetical` and `psql -d parenthetical < database/schema.sql`.
+
+If you'd like to have some data to work with, run `psql -d parenthetical < database/seed.sql`. 
+
 ## Usage
 Once the dependencies are installed, you can run `ruby app.rb` to start the application. You will then be able to access it at `localhost:8080`

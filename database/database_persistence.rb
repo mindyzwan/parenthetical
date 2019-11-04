@@ -10,13 +10,13 @@ class DatabasePersistence
     @logger = logger
   end
 
+  def disconnect
+    @db.close
+  end
+
   def query(statement, *params)
     @logger.info "#{statement}: #{params}" # Funtionailty that provides the ability to see d-bug output in the localhost terminal
     @db.exec_params(statement, params)
-  end
-
-  def disconnect
-    @db.close
   end
 
   def all_users
