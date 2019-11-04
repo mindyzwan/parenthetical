@@ -1,0 +1,12 @@
+<h1 class="full">Users</h1>
+<div>
+  <% if users.size == 0 %>
+  <p>There are currently no registered users</p>
+  <% else %>
+  <ul>
+  <% users.each do |user| %>
+    <li class="full"><%= user[:first_name] %> <%= user[:last_name] %> (<%= user[:email] %>)</li>
+  <% end %>
+  </ul>
+  <% end %>
+</div>

@@ -1,0 +1,13 @@
+<h1 class="full">Scripts</h1>
+<div>
+  <% if scripts.size == 0 %>
+  <p>No scripts have been written yet</p>
+  <% else %>
+  <h2 class="full"><%= scripts.size %> Script<%= ((scripts.size == 1) ? '' : 's') %></h2>
+  <ul>
+    <% scripts.each do |script| %>
+    <li class="full"><em>'<%= script[:script_name] %>'</em> (<%= script[:content].length %> characters)</li>
+   <% end %>
+  </ul>
+  <% end %>
+</div>
